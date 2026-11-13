@@ -1,0 +1,19 @@
+List
+[] brackets, is ordered, changeable, and allows duplicates
+Entries dont have to be the same data type
+
+Tuple
+() brackets
+Just like a list, but you cant change and remove entries
+If you want to edit it, use reasignement
+old_tuple = old_tuple[:1] + ("lel",)
+
+Set
+{} brackets
+Just like a list, but without order, indices, and entries cant be edited
+Entries have to be added and removed by value
+
+Dictionary
+{} brackets and :
+dict_name = { "key" : "value"}
+dict_name["key"] produces "value"
