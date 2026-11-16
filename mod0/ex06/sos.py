@@ -3,19 +3,19 @@ from sys import argv
 
 def main() -> None:
     """
- Converts the first given argument into morse code
+ Converts the first given argument into morse code, space becomes '/'
  Use:
     sos.py 'Sos'
  Errorchecks:
     Argument count == 1
-    
+    First arguments characters must be alphanumeric or space
     """
     argc = len(argv)
     if (argc != 2):
         print("AssertionError: the arguments are bad")
         return
     for char in argv[1]:
-        if not char.isalnum() and not " ":
+        if not char.isalnum() and not char == " ":
             print("AssertionError: the arguments are bad")
             return
     NESTED_MRSE = {
