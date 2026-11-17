@@ -1,0 +1,12 @@
+yield ...
+A function that contains the "yield" keyword returns a special generator object.
+This object runs the functions code whenever it is accessed, returning a single value.
+Right after accessing, the yield function resumes code until it hits a "yield",
+at which point it will pause execution, return the value, and pick up from there the next access.
+When the yield function hits a return, it raises/throws a StopIteration, which is similar to an exception,
+but it is caught by for loops, and tells them to break.
+
+filter()
+Filter is a function that keeps accessing an iterable object,
+and returns a special filter object, which can be iterated over to return the members of the original list,
+that satisfy the given filter functions condition.

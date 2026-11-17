@@ -1,0 +1,11 @@
+Build package distributable with
+python -m build <folder path>
+
+Then install it to pip with
+pip install <folder path>/dist/<package name>-<package version>-py3-none-any.whl
+
+You can then list it with
+pip show -v <package_name>
+
+You can then use it via importing with:
+from <package_name> import <function_name>
