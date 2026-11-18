@@ -12,7 +12,7 @@ def all_thing_is_obj(object: Any) -> int:
         print("Dict : ", end="")
     elif type(object) is str:
         print(object, end="")
-        print("is in the kitchen: ", end="")
+        print(" is in the kitchen: ", end="")
     else:
         print("Type not found")
         return (42)

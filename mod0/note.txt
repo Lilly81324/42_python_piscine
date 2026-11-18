@@ -1,0 +1,3 @@
+ex01 remove lesson
+ex02 remove tester
+ex03 remove tester

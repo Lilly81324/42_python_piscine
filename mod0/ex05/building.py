@@ -1,4 +1,4 @@
-from sys import argv
+from sys import argv, stdin
 
 
 # Analyzes the given string and prints out the results
@@ -31,12 +31,14 @@ def main() -> None:
  Error Checks
     Argument Count == 1"""
     argc = len(argv)
-    if (argc < 2):
-        return
     if (argc > 2):
         print("AssertionError: Too many arguments given")
         return
-    scan_string(argv[1])
+    if (argc < 2):
+        print("What is the text to count?")
+        scan_string(stdin.read())
+    else:
+        scan_string(argv[1])
 
 
 if __name__ == "__main__":

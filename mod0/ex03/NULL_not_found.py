@@ -13,5 +13,5 @@ def NULL_not_found(object: Any) -> int:
         print(f"{varname}: {object} {type(object)}")
         return (0)
     else:
-        print("Type not found")
+        print("Type not Found")
         return (1)
